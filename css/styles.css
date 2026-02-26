@@ -71,25 +71,32 @@ img {
 }
 
 
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
 .header {
   position: fixed;
   top: 32px;
-  left: 100px;
-  height: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1240px;
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  border-radius: 8px;
   z-index: 1000;
 }
 
 .header .container {
   display: flex;
-  width: 1240px;
-  height: 48px;
-  margin-right: 100px;
-  padding: 12px 30px;
-  background-color: var(--accent-color);
-  border-radius: 4px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-  align-items: center;
+  border-radius: 8px;
   justify-content: space-between;
+  align-items: center;
+  padding: 4px 30px;
+  background-color: var(--accent-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 .logo-link {
@@ -144,21 +151,22 @@ img {
 }
 
 .hero {  
-  /* width: 1440px; */
-  background-color: #1b414b;
+  background-color: var(--background-color);
   background-image: url(../images/hero-images/hero-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  padding-top: 235px;
+  padding-bottom: 215px;
 }
 
-.hero-container {
+.hero .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 235px 220px 215px;
 }
 
 
@@ -208,25 +216,28 @@ transition: color 250ms cubic-bezier(0.47, 0, 0.745, 0.715), background-color 25
 }
 
 .about {
-  background-color: var(--background-color);
-  height: 775px;
- 
- 
+  width: 1440px;
+  margin-top: -32px;
+  background-color: var(--background-color);border-radius: 24px;
+  margin: 0 auto;
+  
 }
 
-.about-container {
-  position: absolute;
-  border-radius: 24px;
+.about .container {
+  display: flex;
+  width: 1340;
+  flex-direction: column;
   border: transparent;
   overflow: hidden;
+  border-radius: 24px;
+  background-color: var(--accent-color);
+  padding: 0;
+}
+
+.about-content-box {
   display: flex;
   justify-content: space-between;
-  padding: 50px;
-  padding-bottom: 438px;
-  top: 765px;
-  left: 50px;
-  width: 1240px;
-  background-color: var(--accent-color);
+  padding: 50px 50px 100px;
 }
 
 .about-title {
@@ -261,26 +272,21 @@ color: var(--heading-text-color);
 }
 
 .image-box {
-  position: absolute;
-  width: calc(100% - 98px);
-  height: 507;
-  top: 1104px;
-  left: 50px;
+  width: 1340px;
+  margin: 0 auto;
   border-radius: 24px;
   border: none;
   overflow: hidden;
 }
 
-
-
 .yacht {
   background-color: var(--background-color);
 }
 
-.yacht-container {
+.yacht .container {
   display: flex;
   flex-direction: column;
-  padding: 150px 50px 0px;
+  padding: 150px 100px 0;
 }
 
 .yacht-title {
@@ -357,7 +363,7 @@ color: var(var(--main-color));
 .yacht-tech {
   display: grid;
   grid-template-columns: 1fr auto;
-  column-gap: 204px;
+  column-gap: 120px;
   row-gap: 6px;
   margin: 16px 32px 32px;
 }
@@ -383,10 +389,7 @@ letter-spacing: 0.03em;
 
 .yacht-rent-link {
   display: block;
-  margin-right: auto;
-    margin-left: auto;
-  
-    margin-bottom: 50px;
+  margin: 0 auto;
   padding: 16px 40px;
   /* min-width: 180px; */
   font-weight: 500;
