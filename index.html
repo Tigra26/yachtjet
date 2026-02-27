@@ -185,169 +185,165 @@
           </ul>
 
           <a class="yacht-rent-link" href="#yacht-rent-form">Yacht rental</a>
-          </section>
-          <section class="yacht-add">
-          <div class="container">
-            <h2 class="visually-hidden">Yacht addvertisment</h2>
-            <ul class="advantages-list">
-              <li class="advantages-item">
-                <h3 class="add-number">01</h3>
-                <hr class="add-devider" />
-                <p class="add-text">
-                  Swimming and water sports: try your hand at water skiing
-                </p>
-              </li>
-              <li class="advantages-item">
-                <h3 class="add-number">02</h3>
-                <hr class="add-devider" />
-                <p class="add-text">Fishing: try to catch your own dinner</p>
-              </li>
-              <li class="advantages-item">
-                <h3 class="add-number">03</h3>
-                <hr class="add-devider" />
-                <p class="add-text">
-                  Sightseeing tours: take a shore or island tour, enjoy the
-                  views and sunsets from the water
-                </p>
-              </li>
-              <li class="advantages-item">
-                <h3 class="add-number">04</h3>
-                <hr class="add-devider" />
-                <p class="add-text">
-                  Rest and relaxation: read a book or listen to music while
-                  enjoying the outdoor atmosphere.
-                </p>
-              </li>
-            </ul>
-            <img
-              src="./images/add-images/add-image.jpg"
-              alt="Decoration of yacht"
-              class="yacht-example"
-            />
-          </div>
+        </div>
+      </section>
+      <section class="yacht-add">
+        <div class="container">
+          <h2 class="visually-hidden">Yacht addvertisment</h2>
+          <ul class="advantages-list">
+            <li class="advantages-item">
+              <h3 class="add-number">01</h3>
+              <hr class="add-devider" />
+              <p class="add-text">
+                Swimming and water sports: try your hand at water skiing
+              </p>
+            </li>
+            <li class="advantages-item">
+              <h3 class="add-number">02</h3>
+              <hr class="add-devider" />
+              <p class="add-text">Fishing: try to catch your own dinner</p>
+            </li>
+            <li class="advantages-item">
+              <h3 class="add-number">03</h3>
+              <hr class="add-devider" />
+              <p class="add-text">
+                Sightseeing tours: take a shore or island tour, enjoy the views
+                and sunsets from the water
+              </p>
+            </li>
+            <li class="advantages-item">
+              <h3 class="add-number">04</h3>
+              <hr class="add-devider" />
+              <p class="add-text">
+                Rest and relaxation: read a book or listen to music while
+                enjoying the outdoor atmosphere.
+              </p>
+            </li>
+          </ul>
+          <img
+            src="./images/add-images/add-image.jpg"
+            alt="Decoration of yacht"
+            class="yacht-example"
+          />
+        </div>
+      </section>
+      <section class="yacht-rental">
+        <div class="yacht-rental-group">
+          <img
+            src="./images/rental-images/rental-image.jpg"
+            alt="Renting example yacht"
+            class="rental-item"
+          />
+          <div class="rental-form-wrapper">
+            <h2 class="rental-form-title">Rent a yacht now</h2>
+            <form
+              action="https://example.com/form-handler"
+              class="rental-form"
+              id="yacht-rent-form"
+              autocomplete="on"
+            >
+              <label for="user-name" class="yacht-form-label" required></label>
+              <input
+                class="yacht-form-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Full Name"
+                required
+              />
 
-          <div class="yacht-rental-group">
-            <img
-              src="./images/rental-images/rental-image.jpg"
-              alt="Renting example yacht"
-              class="rental-item"
-            />
-            <div class="rental-form-wrapper">
-              <h2 class="rental-form-title">Rent a yacht now</h2>
-              <form
-                action="https://example.com/form-handler"
-                class="rental-form"
-                id="yacht-rent-form"
-                autocomplete="on"
-              >
-                <label
-                  for="user-name"
-                  class="yacht-form-label"
-                  required
-                ></label>
-                <input
-                  class="yacht-form-input"
-                  type="text"
-                  name="user-name"
-                  id="user-name"
-                  placeholder="Full Name"
-                  required
-                />
+              <label for="email" class="yacht-form-label" required></label>
+              <input
+                class="yacht-form-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+                required
+              />
 
-                <label for="email" class="yacht-form-label" required></label>
-                <input
-                  class="yacht-form-input"
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="E-mail"
-                  required
-                />
+              <label for="phone" class="yacht-form-label" required></label>
+              <input
+                type="text"
+                class="yacht-form-input"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Phone number"
+                required
+              />
 
-                <label for="phone" class="yacht-form-label" required></label>
-                <input
-                  type="text"
-                  class="yacht-form-input"
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  placeholder="Phone number"
-                  required
-                />
+              <label class="yach-form-label" for="user-comment">Comment</label>
+              <textarea
+                class="yacht-form-textarea"
+                name="user-comment"
+                rows="5"
+                id="user-comment"
+                placeholder="Comment"
+                required
+              ></textarea>
 
-                <label class="yach-form-label" for="user-comment"
-                  >Comment</label
-                >
-                <textarea
-                  class="yacht-form-textarea"
-                  name="user-comment"
-                  rows="5"
-                  id="user-comment"
-                  placeholder="Comment"
-                  required
-                ></textarea>
-
-                <button class="yacht-form-button" type="submit">Send</button>
-              </form>
-            </div>
+              <button class="yacht-form-button" type="submit">Send</button>
+            </form>
           </div>
         </div>
       </section>
 
-      <section class="review" >
+      <section class="review">
         <div class="container" id="review">
           <h2 class="review-title">
-          YachtJet take pride in providing the best possible service and
-          experience to our customers
-        </h2>
-        <p class="review-descr">
-          Our customers have enjoyed unforgettable moments on our yachts. Don't
-          just take our word for it - read on to find out what they have to say
-          about their journey with us.
-        </p>
-        <ul class="review-list">
-          <li class="review-items">
-            <img
-              src="./images/review-image/reviewer-1.jpg"
-              alt="John Wax"
-              class="review-image"
-            />
-            <h3 class="review-name">John Wax</h3>
-            <p class="review-text">
-              I rented the Lagoon 620 with my family for a week-long vacation
-              and it was the best decision ever. The yacht was spacious,
-              comfortable, and luxurious, and the crew took care of everything.
-            </p>
-          </li>
-          <li class="review-items">
-            <img
-              src="./images/review-image/reviewer-2.jpg"
-              alt="Victoria Romashenko"
-              class="review-image"
-            />
-            <h3 class="review-name">Victoria Romashenko</h3>
-            <p class="review-text">
-              The Sunseeker Manhattan 66 was the perfect choice for our romantic
-              getaway. The yacht was beautifully designed, with all the
-              amenities we needed, and the crew was attentive and friendly.
-            </p>
-          </li>
-          <li class="review-items">
-            <img
-              src="./images/review-image/reviewer-3.jpg"
-              alt="Ihor Trachuk"
-              class="review-image"
-            />
-            <h3 class="review-name">Ihor Trachuk</h3>
-            <p class="review-text">
-              The Azimut 80 was the most luxurious yacht I've ever been on. The
-              cabins were spacious and elegant, and the outdoor areas were
-              perfect for relaxing and entertaining. Worth of every penny!
-            </p>
-          </li>
-        </ul>
+            YachtJet take pride in providing the best possible service and
+            experience to our customers
+          </h2>
+          <p class="review-descr">
+            Our customers have enjoyed unforgettable moments on our yachts.
+            Don't just take our word for it - read on to find out what they have
+            to say about their journey with us.
+          </p>
+          <ul class="review-list">
+            <li class="review-items">
+              <img
+                src="./images/review-image/reviewer-1.jpg"
+                alt="John Wax"
+                class="review-image"
+              />
+              <h3 class="review-name">John Wax</h3>
+              <p class="review-text">
+                I rented the Lagoon 620 with my family for a week-long vacation
+                and it was the best decision ever. The yacht was spacious,
+                comfortable, and luxurious, and the crew took care of
+                everything.
+              </p>
+            </li>
+            <li class="review-items">
+              <img
+                src="./images/review-image/reviewer-2.jpg"
+                alt="Victoria Romashenko"
+                class="review-image"
+              />
+              <h3 class="review-name">Victoria Romashenko</h3>
+              <p class="review-text">
+                The Sunseeker Manhattan 66 was the perfect choice for our
+                romantic getaway. The yacht was beautifully designed, with all
+                the amenities we needed, and the crew was attentive and
+                friendly.
+              </p>
+            </li>
+            <li class="review-items">
+              <img
+                src="./images/review-image/reviewer-3.jpg"
+                alt="Ihor Trachuk"
+                class="review-image"
+              />
+              <h3 class="review-name">Ihor Trachuk</h3>
+              <p class="review-text">
+                The Azimut 80 was the most luxurious yacht I've ever been on.
+                The cabins were spacious and elegant, and the outdoor areas were
+                perfect for relaxing and entertaining. Worth of every penny!
+              </p>
+            </li>
+          </ul>
         </div>
-        
       </section>
     </main>
     <footer class="footer">
