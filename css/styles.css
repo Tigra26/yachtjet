@@ -333,20 +333,8 @@ img {
 }
 
 .yacht-description {
-  display: flex;
-  justify-content: space-between;
-  align-self: stretch;
+  padding: 16px 32px 32px;
   width: 100%;
-  padding: 16px 32px 0px;
-  color: var(var(--main-color));
-}
-
-.characters {
-  font-size: 13px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--heading-text-color);
 }
 
 .yacht-name {
@@ -355,42 +343,43 @@ img {
   line-height: 1.2;
   letter-spacing: -0.04em;
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   padding-bottom: 16px;
-
-  color: var(var(--main-color));
+  border-bottom: 1px solid rgba(4, 3, 6, 0.1);
+  margin-bottom: 16px;
+  color: var(--main-color);
 }
 
-.devider {
-  border: 0;
-  height: 1px;
-  width: 100%;
-  border-top: 1px solid var(--border-color);
-  margin: 0px 32px;
-}
-
-.yacht-tech {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  column-gap: 120px;
-  row-gap: 6px;
-  margin: 16px 32px 32px;
-}
-
-.yacht-option {
-  margin: 0;
-  font-size: 14px;
+.characters {
+  font-size: 13px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: rgba(4, 3, 6, 0.4);
+}
+
+
+.yacht-option {
+    font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 6px;
   color: rgba(0, 0, 0, 0.45);
 }
 
 .option-value {
-  margin: 0;
-  font-size: 14px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 400;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  justify-self: start;
   color: var(--heading-text-color);
 }
 
@@ -398,7 +387,6 @@ img {
   display: block;
   margin: 0 auto;
   padding: 16px 40px;
-  /* min-width: 180px; */
   font-weight: 500;
   font-size: 18px;
   line-height: 1.1;
@@ -766,5 +754,6 @@ img {
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
+  cursor: pointer;
   color: rgba(251, 251, 251, 0.4);
 }
