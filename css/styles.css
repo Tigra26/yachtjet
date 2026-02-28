@@ -78,14 +78,26 @@ img {
 
 .header {
   position: fixed;
-  top: 32px;
+  top: 32px; /* фінальна позиція */
   left: 50%;
-  transform: translateX(-50%);
   width: 1240px;
   border: 1px solid var(--accent-color);
   background-color: var(--accent-color);
   border-radius: 8px;
   z-index: 1000;
+
+  /* старт: зверху + зліва */
+  transform: translate(-150%, -60px);
+  opacity: 0;
+
+  animation: header-slide-in 900ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes header-slide-in {
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
 }
 
 .header .container {
@@ -155,10 +167,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin: 0 auto;
-  padding-top: 235px;
-  padding-bottom: 215px;
+  
 }
 
 .hero .container {
@@ -166,6 +175,10 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  padding-top: 235px;
+  padding-bottom: 215px;
 }
 
 .hero-title {
@@ -216,22 +229,22 @@ img {
 }
 
 .about {
-  width: 1440px;
-  margin-top: -32px;
+ 
   background-color: var(--background-color);
-  border-radius: 24px;
-  margin: 0 auto;
+  margin-top: -32px;
 }
 
 .about .container {
+   padding: 0;
+   border-top-right-radius: 24px;
+border-top-left-radius: 24px;
+border-bottom-right-radius: 28px;
+border-bottom-left-radius: 28px;
   display: flex;
-  width: 1340;
   flex-direction: column;
   border: transparent;
   overflow: hidden;
-  border-radius: 24px;
   background-color: var(--accent-color);
-  padding: 0;
 }
 
 .about-content-box {
@@ -271,7 +284,7 @@ img {
   color: var(--heading-text-color);
 }
 
-.image-box {
+.description-image {
   width: 1340px;
   margin: 0 auto;
   border-radius: 24px;
@@ -281,17 +294,17 @@ img {
 
 .yacht {
   background-color: var(--background-color);
-  padding: 150px 100px 0;
+  
 }
 
 .yacht .container {
   display: flex;
   flex-direction: column;
+  padding: 150px 50px 0;
   /* padding: 150px 50px 0px; */
   /* width: 1340; */
   border: transparent;
   overflow: hidden;
-  padding: 0;
 }
 
 .yacht-title {
@@ -361,6 +374,23 @@ img {
 }
 
 
+.option-value-group {
+ display: flex;
+ flex-direction: column;
+ padding: 0;
+}
+
+.option-value-group-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  margin-bottom: 6px;
+}
+
+.option-value-group-item:last-child {
+  margin-bottom: 0;
+}
+
 .yacht-option {
     font-size: 14px;
   line-height: 1.18;
@@ -369,18 +399,21 @@ img {
   display: flex;
   justify-content: space-between;
   font-weight: 500;
-  text-transform: uppercase;
-  padding-bottom: 6px;
+  padding: 0;
   color: rgba(0, 0, 0, 0.45);
 }
 
 .option-value {
+  display: flex;
+  justify-content: flex-start;
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 400;
   line-height: 1.18;
   letter-spacing: 0.03em;
+   padding: 0;
   color: var(--heading-text-color);
+
 }
 
 .yacht-rent-link {
@@ -411,19 +444,14 @@ img {
 
 .yacht-add {
   background-color: var(--background-color);
-  padding: 150px 50px 0px;
+  
 }
 
 .yacht-add .container {
+  padding: 150px 0px 75px;
     display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 32px;
-  
-  /* width: 1340; */
-  border: transparent;
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
 }
 
 .advantages-list {
@@ -475,11 +503,9 @@ img {
   color: rgba(251, 251, 251, 0.8);
 }
 
-.yacht-rental {
-  padding: 150px 50px 0;
-}
 
-.yacht-rental .yacht-rental-group {
+.yacht-rental .container {
+  padding: 75px 0px 75px;
   display: flex;
   gap: 50px;
 }
@@ -579,13 +605,14 @@ img {
 }
 
 .review {
-  padding: 150px 50px;
+  background-color: var(--background-color);
 }
 
 .review .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;  
+  padding: 75px 0px 150px;
 }
 
 .review-title {
@@ -655,13 +682,16 @@ img {
 
 .footer {
   background-color: var(--background-color);
-  padding: 0px 25px;
+  display: flex;
+  justify-content: center;
+  
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 25px;
   padding: 50px 75px 20px;
   background-color: var(--main-color);
   border-top-left-radius: 24px;
