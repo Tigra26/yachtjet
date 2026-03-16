@@ -190,26 +190,104 @@
               </p>
             </div>
           </div>
-          <picture>
-            <!-- desktop -->
-            <source
-              media="(min-width: 1280px)"
-              srcset="./images/about-images/about-image-desc.jpg"
-            />
+        <picture>
+          <source
+            type="image/avif"
+            srcset="
+              ./images/avif/about-img-desctop-lg@2x.avif 2x,
+              ./images/avif/about-img-desctop-lg.avif 1x
+            "
+            media="(min-width:1440px)"
+          />
+          <source
+            type="image/avif"
+            srcset="
+              ./images/avif/about-img-desctop@2x.avif 2x,
+              ./images/avif/about-img-desctop.avif    1x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            type="image/avif"
+            srcset="
+              ./images/avif/about-img-tab@2x.avif 2x,
+              ./images/avif/about-img-tab.avif    1x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            type="image/avif"
+            srcset="
+              ./images/avif/about-img-mobile@2x.avif 2x,
+              ./images/avif/about-img-mobile.avif    1x
+            "
+            media="(max-width:767px)"
+          />
 
-            <!-- tablet -->
-            <source
-              media="(min-width: 768px)"
-              srcset="./images/about-images/about-image-tab.jpg"
-            />
+          <source
+            type="image/webp"
+            srcset="
+              ./images/webp/about-img-desctop-lg@2x.webp 2x,
+              ./images/webp/about-img-desctop-lg.webp    1x
+            "
+            media="(min-width:1440px)"
+          />
+          <source
+            type="image/webp"
+            srcset="
+              ./images/webp/about-img-desctop@2x.webp 2x,
+              ./images/webp/about-img-desctop.webp    1x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            type="image/webp"
+            srcset="
+              ./images/webp/about-img-tab@2x.webp 2x,
+              ./images/webp/about-img-tab.webp    1x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            type="image/webp"
+            srcset="
+              ./images/webp/about-img-mobile@2x.webp 2x,
+              ./images/webp/about-img-mobile.webp    1x
+            "
+            media="(max-width:767px)"
+          />
 
-            <!-- mobile -->
-            <img
-              class="description-image"
-              src="./images/about-images/about-image-mb.jpg"
-              alt="expensive and beautiful yacht"
-            />
-          </picture>
+          <source
+            srcset="
+              ./images/about-images/about-img-desctop-lg@2x.jpg 2x,
+              ./images/about-images/about-img-desctop-lg.jpg    1x
+            "
+            media="(min-width:1440px)"
+          />
+          <source
+            srcset="
+              ./images/about-images/about-img-desctop@2x.jpg 2x,
+              ./images/about-images/about-img-desctop.jpg    1x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/about-images/about-img-tab@2x.jpg 2x,
+              ./images/about-images/about-img-tab.jpg    1x
+            "
+            media="(min-width:768px)"
+          />
+          <img
+            srcset="./images/about-images/about-img-mobile@2x.jpg 2x"
+            src="./images/about-images/about-img-mobile.jpg"
+            alt="Beautiful yacht in sunset sea"
+            width="335"
+            height="335"
+            class="description-image"
+            loading="lazy"
+          />
+        </picture>
         </div>
       </section>
 
