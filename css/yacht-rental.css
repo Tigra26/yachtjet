@@ -11,7 +11,7 @@
 
 .yacht-rental .container {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   gap: 80px;
 
   @media screen and (width >= 768px) {
@@ -19,33 +19,54 @@
   }
 
   @media screen and (width >= 1280px) {
-    flex-direction: row;
+    flex-direction: row-reverse;
     gap: 50px;
+  }
+
+  @media screen and (width >= 1440px) {
+    padding-right: 100px;
   }
 }
 
 .rental-item {
-  max-width: 768px;
   border-radius: 24px;
   border: none;
   overflow: hidden;
   margin: 0;
-  /* box-shadow: inset 0px 4px 4px var(--background-color); */
+  box-shadow: inset 0px 4px 4px var(--background-color);
+
+  @media screen and (width >= 768px) {
+    width: 704px;
+    height: 534px;
+  }
+
+  @media screen and (width >= 1280px) {
+    width: 658px;
+    height: 536px;
+  }
+
+  @media screen and (width >= 1440px) {
+    width: 768px;
+    height: 534px;
+  }
 }
 
 .rental-form-wrapper {
-  display: flex;
-  flex-direction: column;
+  display: block;
   width: 335px;
  
-  @media screen and (width >= 768px) {
+   @media screen and (min-width: 768px) and (max-width: 1279px){
+    margin: 0 auto;
+    width: 473px;
+  }
+
+  @media screen and (width >= 1280px) {
     width: 472px;
   }
 }
 
 .rental-form-title {
   justify-content: flex-start;
-  align-items: center;
   margin-bottom: 50px;
   font-weight: 500;
   font-size: 28px;
@@ -85,7 +106,7 @@
 }
 
 .yacht-form-textarea {
-  padding: 18px;
+  padding: 18px 2px 2px 18px ;
   border-radius: 12px;
   border: 1px solid rgba(251, 251, 251, 0.2);
   color: rgba(251, 251, 251, 0.4);
@@ -110,8 +131,8 @@
 .yacht-form-button {
   display: inline-block;
   align-self: flex-start;
-  padding: 18px 75px;
-  min-width: 194px;
+  width: 122px;
+  height: 46px;
   font-weight: 500;
   border-radius: 15px;
   border: 1px solid var(--heading-text-color);
@@ -127,6 +148,8 @@
     @media screen and (width >= 768px) {
       font-size: 18px;
       line-height: 1.1;
+      width: 194px;
+      height: 56px;
     }
 }
 
