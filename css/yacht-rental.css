@@ -1,0 +1,151 @@
+.yacht-rental {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media screen and (width >= 768px) {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+
+.yacht-rental .container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+  @media screen and (width >= 768px) {
+    gap: 100px;
+  }
+
+  @media screen and (width >= 1280px) {
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+
+  @media screen and (width >= 1440px) {
+    padding-right: 100px;
+  }
+}
+
+.rental-item {
+  border-radius: 24px;
+  border: none;
+  overflow: hidden;
+  margin: 0;
+  box-shadow: inset 0px 4px 4px var(--background-color);
+
+  @media screen and (width >= 768px) {
+    width: 704px;
+    height: 534px;
+  }
+
+  @media screen and (width >= 1280px) {
+    width: 658px;
+    height: 536px;
+  }
+
+  @media screen and (width >= 1440px) {
+    width: 768px;
+    height: 534px;
+  }
+}
+
+.rental-form-wrapper {
+  display: block;
+  width: 335px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin: 0 auto;
+    width: 473px;
+  }
+
+  @media screen and (width >= 1280px) {
+    width: 472px;
+  }
+}
+
+.rental-form-title {
+  justify-content: flex-start;
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  color: var(--main-text-color);
+
+  @media screen and (width >= 768px) {
+    font-size: 48px;
+  }
+}
+
+.rental-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.yacht-form-input {
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  color: rgba(251, 251, 251, 0.4);
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.16;
+  margin-bottom: 18px;
+  transition:
+    color 250ms cubic-bezier(0.47, 0, 0.745, 0.715),
+    border 250ms cubic-bezier(0.47, 0, 0.745, 0.715);
+
+  @media screen and (width >= 768px) {
+    line-height: 1.3;
+  }
+}
+
+.yacht-form-textarea {
+  padding: 18px 2px 2px 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  color: rgba(251, 251, 251, 0.4);
+  background-color: transparent;
+  line-height: 1.3;
+  margin-bottom: 50px;
+  transition:
+    color 250ms cubic-bezier(0.47, 0, 0.745, 0.715),
+    border 250ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.yacht-form-textarea:hover,
+.yacht-form-textarea:focus,
+.yacht-form-input:hover,
+.yacht-form-input:focus {
+  color: var(--main-text-color);
+  border: 1px solid rgba(251, 251, 251, 0.5);
+}
+
+.yacht-form-button {
+  display: inline-block;
+  align-self: flex-start;
+  width: 122px;
+  height: 46px;
+  font-weight: 500;
+  border-radius: 15px;
+  border: 1px solid var(--heading-text-color);
+  line-height: 1.3;
+  color: var(--main-text-color);
+  background-color: var(--main-color);
+  transition:
+    color 250ms cubic-bezier(0.47, 0, 0.745, 0.715),
+    background-color 250ms cubic-bezier(0.47, 0, 0.745, 0.715);
+
+  @media screen and (width >= 768px) {
+    font-size: 18px;
+    line-height: 1.1;
+    width: 194px;
+    height: 56px;
+  }
+}
+
+.yacht-form-button:hover,
+.yacht-form-button:focus {
+  color: var(--main-color);
+  background-color: var(--accent-color);
+}
